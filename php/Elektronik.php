@@ -5,7 +5,7 @@ class Elektronik {
     private $id, $nama, $merek, $deskripsi, $harga, $foto;
 
     // Constructor
-    public function __construct($id="", $nama="", $merek="", $deskripsi="", $harga="") {
+    public function __construct($id="", $nama="", $merek="", $deskripsi="", $harga="", $foto="") {
         $this->id = $id;
         $this->nama = $nama;
         $this->merek = $merek;
@@ -33,4 +33,9 @@ class Elektronik {
     // Getter and setter for harga
     public function getHarga() { return $this->harga; }
     public function setHarga($harga) { $this->harga = $harga; }
+
+    // Getter and setter for foto
+    public function getFoto() { return $this->foto; }
+    public function setFoto($foto) { $this->foto = $foto; }
+    
 }
