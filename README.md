@@ -5,6 +5,13 @@ Saya Dzaka Musyaffa Hidayat dengna NIM 2404913 Mengerjakan Tugas Praktikum 1 dal
 
 ## Desain Program
 
+Desain program untuk mengelola produk dalam toko elektronik dengan konsep Object Oriented Programming (OOP) dan ditulis dalam 4 bahasa, yaitu: C++, Java, PHP, dan Python
+
+## Alur Program
+
+User diberi Pilihan Menu sederhana, dan program akan memproses input dari user
+
+
 
 
 
