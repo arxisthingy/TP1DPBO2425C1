@@ -21,7 +21,7 @@ class Main {
         do {
             // Show the available menu
             System.out.println("-----------MENU-----------");
-            System.out.println("1. Tampilkan semau elektronik");
+            System.out.println("1. Tampilkan semua elektronik");
             System.out.println("2. Tambahkan elektronik baru");
             System.out.println("3. Edit elektronik");
             System.out.println("4. Hapus elektronik");

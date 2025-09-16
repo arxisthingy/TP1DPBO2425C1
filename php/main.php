@@ -89,7 +89,7 @@ if (isset($_GET['edit'])) {
 </head>
 <body>
     <a href="?reset=1" onclick="return confirm('Reset all data?')">Reset Data</a>
-    <h2>CRUD Data Elektronik</h2>
+    <h2>El ektronik</h2>
 
     <!-- CREATE -->
     <h3>Tambah Produk Baru</h3>
