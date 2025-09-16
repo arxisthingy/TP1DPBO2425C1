@@ -11,6 +11,22 @@ Desain program untuk mengelola produk dalam toko elektronik dengan konsep Object
 
 User diberi Pilihan Menu sederhana, dan program akan memproses input dari user
 
+Atribut yang digunakan:
+1. ID
+2. Nama
+3. Merek
+4. Deskripsi
+5. Harga
+6. Foto (khusus PHP)
+
+Program ini dapat melakukan:
+1. Menampilkan 
+
+
+
+
+
+
 
 
 
