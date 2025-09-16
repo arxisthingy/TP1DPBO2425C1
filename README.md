@@ -19,8 +19,15 @@ Atribut yang digunakan:
 5. Harga
 6. Foto (khusus PHP)
 
-Program ini dapat melakukan:
-1. Menampilkan 
+Program ini dapat:
+1. Menampilkan data elektronik yang tersedia
+2. Menambahkan data elektronik baru
+3. Mengedit data elektronik berdasarkan ID
+4. Menghapus data elektronik berdasarkan ID
+5. Mencari elektronik berdasarkan nama
+
+
+
 
 
 
