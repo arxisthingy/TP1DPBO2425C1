@@ -1,7 +1,7 @@
 # TP1DPBO2425C1
 ## Janji 
 
-Saya Dzaka Musyaffa Hidayat dengna NIM 2404913 Mengerjakan Tugas Praktikum 1 dalam Mata Kuliah Desain Pemrograman Berorientasi Objek untuk Keberkahan-Nya Maka Saya Tidak Akan Melakukan Kecurangan Seperti Yang Telah di Spesifikasikan. Aamiin
+Saya Dzaka Musyaffa Hidayat dengan NIM 2404913 mengerjakan Tugas Praktikum 1 dalam mata kuliah Desain Pemrograman Berorientasi Objek untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
 
 ## Desain Program
 
@@ -58,6 +58,7 @@ Program ini dapat:
 ## PHP
 <img width="1918" height="968" alt="Screenshot 2025-09-16 171632" src="https://github.com/user-attachments/assets/59099f1c-6470-4511-a652-e1b11dccbab8" />
 <img width="1918" height="967" alt="Screenshot 2025-09-16 171852" src="https://github.com/user-attachments/assets/f4044746-9cdd-47c5-92c3-4e41575601e1" />
+
 
 
 
