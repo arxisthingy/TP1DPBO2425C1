@@ -73,6 +73,13 @@ if (isset($_GET['edit'])) {
         }
     }
 }
+
+$search = $_GET['search'] ?? '';
+if ($search) {
+    $elektronik_list = array_filter($_SESSION['elektronik_list'], function($item) use ($search) {
+        return stripos($item->getNama(), $search) !== false;
+    });
+}
 ?>
 
 <!DOCTYPE html>
@@ -101,6 +108,13 @@ if (isset($_GET['edit'])) {
         Harga: <input type="number" name="harga" required>
         Foto: <input type="file" name="foto" accept="image/*">
         <button type="submit">Tambah</button>
+    </form>
+
+    <h3>Cari Produk</h3>
+    <form method="get">
+        <input type="text" name="search" value="<?= htmlspecialchars($search) ?>" placeholder="Cari berdasarkan nama">
+        <button type="submit">Cari</button>
+        <a href="main.php">Reset</a>
     </form>
 
     <!-- READ -->
