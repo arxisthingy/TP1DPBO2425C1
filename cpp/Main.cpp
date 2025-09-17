@@ -7,16 +7,16 @@ int main() {
 
     // vector untuk menyimpan objek
     vector<Elektronik> listToko = {
-        Elektronik("1", "Laptop", "Toshiba", "Laptop Toshiba Core i5", "7000000"),
-        Elektronik("2", "Smartphone", "Samsung", "Samsung Galaxy S21", "12000000"),
-        Elektronik("3", "TV", "LG", "Smart TV 42 inch", "5000000")
+        Elektronik("1", "Laptop", "Toshiba", "Laptop Toshiba Core i5", 7000000),
+        Elektronik("2", "Smartphone", "Samsung", "Samsung Galaxy S21", 12000000),
+        Elektronik("3", "TV", "LG", "Smart TV 42 inch", 5000000)
     };
 
     string input; // input
     do {
         // Show the available menu
         cout << "-----------MENU-----------\n";
-        cout << "1. Tampilkan semau elektroniks\n";
+        cout << "1. Tampilkan semua elektronik\n";
         cout << "2. Tambahkan elektronik baru\n";
         cout << "3. Edit elektronik\n";
         cout << "4. Hapus elektronik\n";
@@ -37,12 +37,13 @@ int main() {
             // Adds new data to the list
             cin.ignore();
             string id = to_string(listToko.size() + 1);
-            string nama, merek, deskripsi, harga;
+            string nama, merek, deskripsi;
+            int harga;
             cout << "ID otomatis: " << id << endl;
             cout << "Nama: "; getline(cin, nama);
             cout << "Merek: "; getline(cin, merek);
             cout << "Deskripsi: "; getline(cin, deskripsi);
-            cout << "Harga: "; getline(cin, harga);
+            cout << "Harga: "; cin >> harga; cin.ignore();
             listToko.push_back(Elektronik(id, nama, merek, deskripsi, harga));
             cout << "Produk berhasil ditambahkan!\n";
         }
@@ -54,11 +55,12 @@ int main() {
             bool found = false;
             for (auto &e : listToko) {
                 if (e.getId() == editId) {
-                    string nama, merek, deskripsi, harga;
+                    string nama, merek, deskripsi;
+                    int harga;
                     cout << "Nama baru: "; getline(cin, nama);
                     cout << "Merek baru: "; getline(cin, merek);
                     cout << "Deskripsi baru: "; getline(cin, deskripsi);
-                    cout << "Harga baru: "; getline(cin, harga);
+                    cout << "Harga baru: "; cin >> harga; cin.ignore();
                     e.setNama(nama);
                     e.setMerek(merek);
                     e.setDeskripsi(deskripsi);

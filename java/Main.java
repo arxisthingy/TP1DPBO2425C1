@@ -12,9 +12,9 @@ class Main {
         ArrayList<Elektronik> listToko = new ArrayList<Elektronik>();
 
         // Add sample data
-        listToko.add(new Elektronik("1", "Laptop", "Toshiba", "Laptop Toshiba Core i5", "7000000"));
-        listToko.add(new Elektronik("2", "Smartphone", "Samsung", "Samsung Galaxy S21", "12000000"));
-        listToko.add(new Elektronik("3", "TV", "LG", "Smart TV 42 inch", "5000000"));
+        listToko.add(new Elektronik("1", "Laptop", "Toshiba", "Laptop Toshiba Core i5", 7000000));
+        listToko.add(new Elektronik("2", "Smartphone", "Samsung", "Samsung Galaxy S21", 12000000));
+        listToko.add(new Elektronik("3", "TV", "LG", "Smart TV 42 inch", 5000000));
 
         String input;
 
@@ -51,7 +51,7 @@ class Main {
                     System.out.print("Deskripsi: ");
                     String deskripsi = scanner.nextLine();
                     System.out.print("Harga: ");
-                    String harga = scanner.nextLine();
+                    int harga = Integer.parseInt(scanner.nextLine());
                     listToko.add(new Elektronik(id, nama, merek, deskripsi, harga));
                     System.out.println("Produk berhasil ditambahkan!");
                     break;
@@ -75,7 +75,8 @@ class Main {
                         System.out.print("Deskripsi baru: ");
                         editElektro.setDeskripsi(scanner.nextLine());
                         System.out.print("Harga baru: ");
-                        editElektro.setHarga(scanner.nextLine());
+                        int hargaBaru = Integer.parseInt(scanner.nextLine());
+                        editElektro.setHarga(hargaBaru);
                         System.out.println("Data berhasil diubah!");
                     } else {
                         System.out.println("ID tidak ditemukan.");

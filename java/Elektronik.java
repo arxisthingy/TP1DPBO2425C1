@@ -3,14 +3,14 @@ public class Elektronik {
     private String nama;
     private String merek;
     private String deskripsi;
-    private String harga;
+    private int harga; // ubah dari String ke int
 
     // Default Constructor
     public Elektronik() {
     }
 
     // Constructor with parameters 
-    public Elektronik(String id, String nama, String merek, String deskripsi, String harga) {
+    public Elektronik(String id, String nama, String merek, String deskripsi, int harga) {
         this.id = id;
         this.nama = nama;
         this.merek = merek;
@@ -53,10 +53,10 @@ public class Elektronik {
     }
 
     // Getter and Setter for harga
-    public String getHarga() {
+    public int getHarga() {
         return harga;
     }
-    public void setHarga(String harga) {
+    public void setHarga(int harga) {
         this.harga = harga;
     }
 }
